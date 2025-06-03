@@ -26,18 +26,18 @@ This project is a proof-of-concept (POC) for a **Cash Register System** built us
 
 ## Project Structure
 
-cash-register-poc
-├── public
-│   └── index.html          # HTML entry point
-├── src
-│   ├── App.tsx             # Main React component
-│   ├── App.css             # Styling for the application
-│   ├── main.tsx            # Application entry point
-│   ├── components          # Folder for reusable components (future expansion)
-│   └── types               # Folder for TypeScript type definitions (future expansion)
-├── package.json            # Project dependencies and scripts
-├── tsconfig.json           # TypeScript configuration
-├── vite.config.ts          # Vite configuration
+cash-register-poc  
+├── public  
+│   └── index.html          # HTML entry point  
+├── src  
+│   ├── App.tsx             # Main React component  
+│   ├── App.css             # Styling for the application  
+│   ├── main.tsx            # Application entry point  
+│   ├── components          # Folder for reusable components (future expansion)  
+│   └── types               # Folder for TypeScript type definitions (future expansion)  
+├── package.json            # Project dependencies and scripts  
+├── tsconfig.json           # TypeScript configuration  
+├── vite.config.ts          # Vite configuration  
 └── README.md               # Project documentation
 
 ---
