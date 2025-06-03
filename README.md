@@ -16,7 +16,7 @@ To get started with the project, follow these steps:
 1. **Clone the repository:**
    ```
    git clone <repository-url>
-   cd cash-register-system
+   cd cash-register-poc
    ```
 
 2. **Install dependencies:**
@@ -29,21 +29,4 @@ To get started with the project, follow these steps:
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:3000` to view the application.
-
-## Project Structure
-
-- `src/`: Contains the source code for the application.
-  - `App.tsx`: Main application component.
-  - `main.tsx`: Entry point of the application.
-  - `components/`: Contains reusable components.
-  - `styles/`: Contains global CSS styles.
-  - `types/`: Contains TypeScript interfaces and types.
-- `public/`: Contains static assets and the main HTML file.
-- `package.json`: Configuration file for npm.
-- `tsconfig.json`: TypeScript configuration file.
-- `vite.config.ts`: Vite configuration file.
-
-## License
-
-This project is licensed under the ISC License.
+4. Open your browser and navigate to `http://localhost:5173/cash-register-poc/` to view the application.
