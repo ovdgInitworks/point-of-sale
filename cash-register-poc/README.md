@@ -1,54 +1,97 @@
-# React + TypeScript + Vite
+# Cash Register POC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a proof-of-concept (POC) for a **Cash Register System** built using **React**, **TypeScript**, and **Vite**. The application allows users to select products, specify quantities using a calculator-like interface, and manage a shopping cart. It also calculates the total amount including VAT for each product.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+### Product Selection
+- Users can select products from a list of buttons.
+- The currently selected product is visually highlighted.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Quantity Specification
+- Users can specify the quantity using a calculator-like interface.
+- Includes buttons for:
+  - Adding digits.
+  - Removing the last digit.
+  - Clearing the entire quantity.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Shopping Cart
+- Users can add selected products and quantities to the shopping cart.
+- Items in the cart can be removed individually.
+- The total amount is calculated, including VAT for each product.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Project Structure
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+cash-register-poc
+├── public
+│   └── index.html          # HTML entry point
+├── src
+│   ├── App.tsx             # Main React component
+│   ├── App.css             # Styling for the application
+│   ├── main.tsx            # Application entry point
+│   ├── components          # Folder for reusable components (future expansion)
+│   └── types               # Folder for TypeScript type definitions (future expansion)
+├── package.json            # Project dependencies and scripts
+├── tsconfig.json           # TypeScript configuration
+├── vite.config.ts          # Vite configuration
+└── README.md               # Project documentation
+
+---
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+   git clone https://github.com/ovdgInitworks/point-of-sale.git
+
+2. Navigate to the project directory:
+   cd cash-register-poc
+
+3. Install dependencies:
+   npm install
+
+4. Start the development server:
+   npm run dev
+
+---
+
+## Scripts
+
+- npm run dev: Starts the development server.
+- npm run build: Builds the project for production.
+- npm run preview: Previews the production build.
+
+---
+
+## Technologies Used
+
+- React: JavaScript library for building user interfaces.
+- TypeScript: Strongly typed programming language for JavaScript.
+- Vite: Fast build tool and development server.
+- CSS: Styling for the application.
+
+---
+
+## Future Improvements
+
+- Add persistent storage for the shopping cart (e.g., localStorage or a backend API).
+- Expand the product list dynamically from an external source.
+- Improve styling and responsiveness for mobile devices.
+- Add unit tests for components and functionality.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Author
+
+Developed by Initworks. Feel free to reach out for questions or suggestions!
